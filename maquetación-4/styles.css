@@ -1,0 +1,295 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#container{
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid rgba(225, 225, 226, 0.8);
+    box-shadow: 0px 0px 10px #ccc ;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 500px;
+}
+#header{
+    display: grid;
+    grid-template-columns: 68% 30%;
+    align-items: center;
+
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+.logo{
+    
+
+    padding: 10px;
+    margin-left: 20px;
+    color: black;
+    text-shadow: 1px 1px 0px #ccc;
+}
+
+.logo h1{
+    font-weight: 900;
+    font-size: 35px;
+    font-family: Helvetica;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+#menu{
+    width: 100%;
+    height: 100%;
+    padding-right: 20px;
+}
+
+#menu ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: 100%;
+    list-style: none;
+}
+
+#menu a{
+    text-transform: uppercase;
+    color: #444;
+    padding: 10px;
+    transition: all 300ms;
+}
+
+#menu a:hover{
+    background-color: #ccc;
+    color: white;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    align-items: start;
+    justify-items: space-between;
+    grid-column-gap: 7px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 255px);
+    grid-gap: 20px;
+    align-items: start;
+}
+
+.project{
+
+    margin-bottom: 25px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    
+}
+
+.project img{
+    width: 100%;
+}
+
+.project-info{
+    padding: 10px;
+}
+.project-info a{
+    font-size: 16px;
+    color: black;
+    transition: all 300sm;
+}
+
+.project-info a:hover{
+    background-color: #444;
+    color: #eee;
+}
+
+.project-info p{
+    font-size: 16px;
+    color: grey;
+    transition: all 300ms;
+}
+
+#BarraLateral{
+    
+
+    margin-right: 30px;
+    padding: 15px;
+
+    
+}
+
+#BarraLateral h2{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    color: #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+    text-align: center;
+}
+
+#BarraLateral ul {
+    list-style: none;
+
+}
+
+#BarraLateral ul li{
+    padding-bottom: 20px;
+}
+
+#BarraLateral a{
+    display: block;
+    padding: 20px;
+    background: #eee;
+    color: #444;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 300ms;
+}
+
+#BarraLateral a:hover{
+    background: #444;
+    color: #eee;
+}
+#pie_pagina{
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    align-items: center;
+    justify-content: start;
+    
+    height: 120px;
+    align-items: center;
+    border-top: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+#pie_pagina .logo {
+    text-align: left;
+    
+    font-weight: 900;
+    font-size: 35px;
+    font-family: Helvetica;
+    font-style: italic;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+#pie_pagina .info {
+    
+    margin-right: 20px;
+    color: #444;
+}
+@media (max-width: 1366px){
+    #projects{
+        display: grid;
+        grid-template-columns: repeat(4,23.6%);
+        
+    }
+}
+
+@media (max-width: 1180px){
+    #header{
+    display: grid;
+    grid-template-columns: 65% 33%;
+    align-items: center;
+    }
+}
+
+@media (max-width: 1165px){
+    #header{
+    display: grid;
+    grid-template-columns: 60% 38%;
+    align-items: center;
+    }
+}
+
+@media (max-width: 950px){
+    #header{
+    display: grid;
+    grid-template-columns: 55% 43%;
+    align-items: center;
+    }
+}
+
+@media (max-width: 860px){
+    #header{
+    display: grid;
+    grid-template-columns: 52% 46%;
+    align-items: center;
+    }
+}
+
+
+@media (max-width: 790px){
+    #header{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center; 
+        justify-content: center;
+        height: 140px;
+        padding-bottom: 20px;
+    }
+    #header h1{
+        text-align: center;
+    }
+
+    #content{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: start;
+        justify-items: space-between;
+        grid-column-gap: auto;
+    
+        
+    }
+    
+    #projects{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .project{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+
+    #BarraLateral{
+    
+
+        margin-right: 0px;
+        padding: 15px;
+    }
+
+    #BarraLateral ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    }
+
+    #pie_pagina{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #pie_pagina .logo{
+        text-align: center;
+    }
+}
