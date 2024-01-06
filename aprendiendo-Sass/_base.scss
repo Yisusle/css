@@ -1,0 +1,133 @@
+// Variables
+$fuente-tipica: sans-serif, Helvetica, Arial;
+$color-fondo: #ccc;
+$color-letra: red;
+$color-secundario: rgb(163, 50, 50);
+
+// Uso de variables
+body{
+    background-color: $color-fondo;
+}
+
+h1{
+    color: $color-letra;
+    font-family: $fuente-tipica;
+}
+
+p{
+    color: $color-secundario;
+}
+
+// Anidación
+.caja{
+    border: 1px solid black;
+    width: 500px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+
+    h1{
+        color: blue;
+    }
+    p{
+        color: green;
+    }
+}
+
+.info{
+    font-size: 10px;
+}
+
+.autor{
+    font-size: 15px;
+    color: orange;
+}
+
+//Mixins / Funciones
+@mixin crearBorders($color, $size, $shadow){
+    border: $size solid $color;
+    border-radius: $size;
+    box-shadow: 0px 0px 5px $shadow;
+}
+
+.caja{
+    @include crearBorders(red, 10px, black);
+}
+
+.listado{
+    @include crearBorders(green, 5px, yellow);
+}
+
+//Herencias
+%alerta-normal{
+    border: 1px solid grey;
+    background-color: #eee;
+    color: gray;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.alert{
+    @extend %alerta-normal;
+}
+
+.alert-danger{
+    @extend %alerta-normal;
+    color: red;
+    border-color: red;
+}
+
+.alert-success{
+    @extend %alerta-normal;
+    color: green;
+    border-color: green;
+}
+
+//Operadores
+.clearfix{
+    clear: both;
+}
+h1{
+    font-size: 20px + 5px - 1px;
+}
+
+$caja: 200px;
+$wrap: 900px;
+
+.cajas{
+    width: $wrap;
+    margin: 0 auto;
+}
+
+.caja{
+    float: left;
+    width: $caja / $wrap * 100%;
+    margin: 10px;
+}
+
+//Condicionales - IF
+//$color-fondo: red;
+
+h1{
+@if $color-fondo == #ccc{
+    color: black;
+}@else if $color-fondo == black {
+    color: lightsalmon;
+}@else{
+    color: pink;
+}
+
+}
+
+//FOR
+$contador: 1;
+@for $contador from 1 through 9{
+    .listado ul li:nth-child(#{$contador}){
+        font-size: $contador * 2px;
+    }
+}
+//EACH
+
+//WHILE
