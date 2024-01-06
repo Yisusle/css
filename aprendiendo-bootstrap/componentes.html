@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Bootsprap Componentes</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" >
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <header class="col-md-12 border mt-2">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Componentes</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Link
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled">Link</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </header>
+            
+
+
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Inicio</a>
+                        </li>
+
+                        <li class="breadcrumb-item">
+                            <a href="#">Desarrollo web</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Componentes de Bootstrap 5</a>
+                        </li>
+                    </ol>
+                </nav>
+
+
+                <div id="carouselExampleInterval" class="carousel slide mb-3 " data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="https://via.placeholder.com/930x350?text=PRIMERA" class="d-block w-100" alt="PRIMERA">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://via.placeholder.com/930x350?text=SEGUNDA" class="d-block w-100" alt="SEGUNDA">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://via.placeholder.com/930x350?text=TERCERA" class="d-block w-100" alt="TERCERA">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                  
+
+                <div class="alert alert-success mt-5 alert-dismissible fade show" role="alert">
+                    <strong>nice!!!</strong>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                    </button>
+                    
+                </div>
+
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+            <h2>
+               <span class="badge badge bg-success"> Componentes de Bootsprap 5</span>
+            </h2>
+
+            <p>
+                <span class="badge badge bg-danger rounded-pill"> Articulo</span>
+            </p>
+        </div>
+
+        <div class="row col-md-9 m-2">
+
+            <div class="card col p-0 m-3">
+                <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200"/>
+                <div class="card-body">
+                    <h3 class="card-title">Tarjeta 1</h3>
+                    <p class="card-text">Hola</p>
+                    <a href="#" class="btn btn-success">Entrar</a>
+                </div>
+            </div>
+            <div class="card col p-0 m-3">
+                <img class="card-img-top img-fluid" src="https://via.placeholder.com/300x200"/>
+                <div class="card-body">
+                    <h3 class="card-title">Tarjeta 2</h3>
+                    <p class="card-text">Hola</p>
+                    <a href="#" class="btn btn-danger">Entrar</a>
+                </div>
+            </div>
+            <div class="card col col p-0 m-3">
+                <img class="card-img-top img-fluid " src="https://via.placeholder.com/300x200"/>
+                <div class="card-body">
+                    <h3 class="card-title">Tarjeta 2</h3>
+                    <p class="card-text">Hola</p>
+                    <a href="#" class="btn btn-info">Entrar</a>
+                </div>
+            </div>
+            <div class="card col col p-0 m-3">
+                <img class="card-img-top img-fluid " src="https://via.placeholder.com/300x200"/>
+                <div class="card-body">
+                    <h3 class="card-title">Tarjeta 4</h3>
+                    <p class="card-text">Hola</p>
+                    <a href="#" class="btn btn-primary">Entrar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            sadsdasda
+        </div>
+
+
+
+
+ <a class="btn btn-danger mt-3" data-toggle="collapse" href="#info" role="button">Información</a>
+  <div class="collapse" id="info">
+        <div class="card card-body bg-danger text-withe mt-2">
+            Información oculta
+        </div>
+
+<br>
+
+  </div>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+ 
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Barra progreso-->
+  <div class="progress mt-5">
+    <div id="barra-progreso" class="progress-bar bg-success w-0" role="progressbar">
+      0%
+    </div>
+  </div>
+
+  <script>
+    var contador = 0;
+    setInterval(function(){
+      if(contador < 100 ) {
+        contador++;
+        var barra = document.querySelector("#barra-progreso") 
+        barra.style.width = contador +'%';
+        barra.innerHTML = contador +'%'; 
+      }
+        
+    }, 1000);
+  </script>
+
+  <button type="button" class="btn-tool btn btn-danger m-3" data-toggle="tooltip" data-placement="bottom" title="Si das click sacaras una alerta">
+    Alerta 3
+  </button>
+  <button type="button" class="btn-tool btn btn-warning m-3" data-toggle="tooltip" data-placement="right" title="Si das click sacaras una alerta">
+    Alerta 2
+  </button>
+  <button type="button" class="btn-pop btn btn-info m-3" data-container="body" data-toggle="popover" title="Hola" data-placement="right" data-content="Esto es un Popover">
+    Alerta 3
+  </button>
+<hr>
+<h3>Formulario</h3>
+
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      
+      
+      <hr>
+      <br>
+
+      <table class="table table-dark table-striped-columns">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+
+        <nav aria-label="pagination" class="m-3">
+            <ul class="pagination ">
+                <li class="page-item">
+                    <a class="page-link" href="#">&laquo;</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">&raquo;</a>
+                </li>
+            </ul>   
+        </nav>
+
+    </div>
+
+    <script type="text/javascript" src="jquery/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="jquery/popper.min.js"></script>
+    <script type="text/javascript" src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+
+      <script>
+        $("document").ready(function(){
+        $(".carousel").carousel({
+            interval: 2000
+        });
+
+        $(".btn-tool").tooltip();
+
+        $(".btn-pop").popover();
+
+        });
+      </script>
+</body>
+</html>
