@@ -1,0 +1,64 @@
+body{
+    --rojo: red;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#layout{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Para que no se salga de la pantalla */
+    flex-flow: row wrap;/* lo mismo pero mas corto*/
+
+    justify-content: space-between;
+
+    height: 700px;
+    align-items: flex-start;
+    
+    border: 3px solid black;
+    padding: 3px;
+}
+
+.caja{
+    /*flex-grow: 1;*/
+    /*flex-basis: calc(100% / 4 - 68px);*/
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    margin: 10px;
+    background-color: gray;
+}
+
+.red{
+    /*flex-grow: 1;*/
+    align-self: flex-start;
+    background-color: var(--rojo);
+    order: 1;
+}
+
+.green{
+    /*flex-grow: 1;*/
+    margin-top: 10%;
+    background-color: green;
+    order: 2;
+}
+
+.blue{
+    /*flex-grow: 0;
+    flex-shrink: 0;*/
+    align-self: center;
+    background-color: blue;
+    order: 3;
+}
+
+.orange{
+    /*flex-grow: 1;*/
+    align-self: flex-end;
+    background-color: orange;
+    order: 4;
+}
+
+
