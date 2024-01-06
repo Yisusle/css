@@ -1,0 +1,228 @@
+/*------AREAS------*/
+
+#web_areas *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#web_areas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas: 
+    "cabezera cabezera cabezera cabezera cabezera" 
+    "barra menu menu menu menu"
+    "barra contenido contenido contenido contenido"
+    "pie pie pie pie pie";
+    grid-gap: 5px;
+
+    width: 74%;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+#web_areas #cabecera{
+    grid-area: cabezera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    background-color: blue;
+    color: white;
+}
+
+#web_areas #cabecera h1{
+    text-transform: uppercase;
+}
+
+#web_areas #menu{
+    grid-area: menu;
+
+    background-color: lightblue;
+    color: black;
+    line-height: 70px;
+}
+
+#web_areas #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+}
+
+#web_areas #contenido{
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+
+    padding: 20px;
+    background-color: #eee;
+}
+
+#web_areas #contenido article{
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+
+#web_areas #BarraLateral{
+    grid-area: barra;
+
+    background-color: orange;
+    color: white;
+}
+
+#web_areas #pie_pagina{
+    grid-area: pie;
+    background-color: black;
+    color: white;
+}
+
+
+
+/*-----------------------------*/
+#web *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#web{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    
+
+    width: 74%;
+    height: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+#web #cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 1 / 6;
+    background-color: blue;
+    color: white;
+}
+
+#web #menu{
+    grid-column: 1 / 6;
+
+    background-color: lightblue;
+    color: black;
+    line-height: 70px;
+}
+
+#web #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+}
+
+#web #contenido{
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+
+    padding: 20px;
+    background-color: #eee;
+}
+
+#web #contenido article{
+    background-color: #ccc;
+    border: 1px solid #555;
+}
+
+#web #BarraLateral{
+    grid-column: 5 / 6;
+    background-color: orange;
+    color: white;
+}
+
+#web #pie_pagina{
+    grid-column: 1 / 6;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+/*------------------------------------------------*/
+
+body{
+    text-align: center;
+    font-family: sans-serif, Arial;
+}
+
+body > h1{
+    text-transform: uppercase;
+}
+
+.layout{
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    
+    /*DEFINIR EL GRID LAYOUT*/
+    display: grid;
+    /*grid-template-columns: repeat(4,calc(25% - 10px));*/
+    grid-template-columns: repeat(3, 1fr);
+
+    /*grid-template-rows: 15% 1fr 1fr;*/
+    grid-template-rows: 1fr 1fr 3fr repeat(2, 1fr);
+
+    /*ESPACIO ENTRE ELEMENTOS GRID*/
+    grid-gap: 10px;
+    padding: 10px;
+    border: 3px solid orangered;
+}
+
+.layout .caja{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+
+    background-color: grey;
+}
+
+.layout .red{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: red;
+}
+
+.layout .green{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: green;
+}
+
+.layout .blue{
+    grid-column: 2 / 4;
+    background-color: blue;
+}
+
+.layout .pink{
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+
+    background-color: palevioletred;
+}
+
+.layout .orange{
+    grid-row: 3 / 5;
+    background-color: orange;
+}
+
+.layout .lightblue{
+    grid-column: 2 / 4;
+    background-color: lightblue;
+}
